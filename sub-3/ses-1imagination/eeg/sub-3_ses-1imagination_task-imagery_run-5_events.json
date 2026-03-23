@@ -1,0 +1,33 @@
+{
+	"onset": {
+		"Description": "Onset (in seconds) of the event from the beginning of the first datapoint. Negative onsets account for events before the first stored data point.",
+		"Units": "s"
+	},
+	"duration": {
+		"Description": "Duration of the event in seconds from onset. Must be zero, positive, or 'n/a' if unavailable. A zero value indicates an impulse event. ",
+		"Units": "s"
+	},
+	"sample": {
+		"Description": "The event onset time in number of sampling points.First sample is 0."
+	},
+	"value": {
+		"Description": "The event code (also known as trigger code or event ID) associated with the event."
+	},
+	"trial_type": {
+		"Description": "The type, category, or name of the event.",
+		"HED": {
+			"right_elbow_flexion": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Imagine, Flex, (Right, Elbow)))",
+			"right_elbow_extension": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Imagine, Stretch, (Right, Elbow)))",
+			"right_supination": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Imagine, Turn, (Right, Forearm), (Label/supination)))",
+			"right_pronation": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Imagine, Turn, (Right, Forearm), (Label/pronation)))",
+			"right_hand_close": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Imagine, Close, (Right, Hand)))",
+			"right_hand_open": "(Sensory-event, Experimental-stimulus, Visual-presentation), (Agent-action, (Imagine, Open, (Right, Hand)))",
+			"rest": "Sensory-event, Experimental-stimulus, Visual-presentation, Rest"
+		}
+	},
+	"Description": "Event annotations for imagery task (rest, right_elbow_extension, right_elbow_flexion, right_hand_close, right_hand_open, right_pronation, right_supination).",
+	"StimulusPresentation": {
+		"StimulusType": "visual cue",
+		"Environment": "laboratory"
+	}
+}
