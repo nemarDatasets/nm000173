@@ -1,0 +1,271 @@
+_dataset:
+  class: Ofner2017
+  code: Ofner2017
+  doi: 10.1371/journal.pone.0182578
+  interval:
+  - 0
+  - 3
+  n_subjects: 15
+  paradigm: imagery
+abstract: How neural correlates of movements are represented in the human brain is of ongoing interest and has been researched
+  with invasive and non-invasive methods. In this study, we analyzed the encoding of single upper limb movements in the time-domain
+  of low-frequency electroencephalography (EEG) signals. Fifteen healthy subjects executed and imagined six different sustained
+  upper limb movements. We classified these six movements and a rest class and obtained significant average classification
+  accuracies of 55% (movement vs movement) and 87% (movement vs rest) for executed movements, and 27% and 73%, respectively,
+  for imagined movements. Furthermore, we analyzed the classifier patterns in the source space and located the brain areas
+  conveying discriminative movement information. The classifier patterns indicate that mainly premotor areas, primary motor
+  cortex, somatosensory cortex and posterior parietal cortex convey discriminative movement information. The decoding of single
+  upper limb movements is specially interesting in the context of a more natural non-invasive control of e.g., a motor neuroprosthesis
+  or a robotic arm in highly motor disabled persons.
+acquisition:
+  channel_types:
+    eeg: 61
+    eog: 3
+    misc: 32
+  filters: 0.01-200 Hz bandpass (8th order Chebyshev), 50 Hz notch
+  ground: AFz
+  hardware: g.tec medical engineering GmbH
+  line_freq: 50.0
+  montage: standard_1005
+  n_channels: 61
+  reference: right mastoid
+  sampling_rate: 512.0
+  sensor_type: active
+  sensors:
+  - C1
+  - C2
+  - C3
+  - C4
+  - C5
+  - C6
+  - CCP1h
+  - CCP2h
+  - CCP3h
+  - CCP4h
+  - CCP5h
+  - CCP6h
+  - CP1
+  - CP2
+  - CP3
+  - CP4
+  - CP5
+  - CP6
+  - CPP1h
+  - CPP2h
+  - CPP3h
+  - CPP4h
+  - CPP5h
+  - CPP6h
+  - CPz
+  - Cz
+  - F1
+  - F2
+  - F3
+  - F4
+  - FC1
+  - FC2
+  - FC3
+  - FC4
+  - FC5
+  - FC6
+  - FCC1h
+  - FCC2h
+  - FCC3h
+  - FCC4h
+  - FCC5h
+  - FCC6h
+  - FCz
+  - FFC1h
+  - FFC2h
+  - FFC3h
+  - FFC4h
+  - FFC5h
+  - FFC6h
+  - FTT7h
+  - FTT8h
+  - Fz
+  - P1
+  - P2
+  - P3
+  - P4
+  - PPO1h
+  - PPO2h
+  - Pz
+  - TTP7h
+  - TTP8h
+  - armeodummy-0
+  - armeodummy-1
+  - armeodummy-10
+  - armeodummy-11
+  - armeodummy-12
+  - armeodummy-2
+  - armeodummy-3
+  - armeodummy-4
+  - armeodummy-5
+  - armeodummy-6
+  - armeodummy-7
+  - armeodummy-8
+  - armeodummy-9
+  - eog-l
+  - eog-m
+  - eog-r
+  - gesture
+  - index_far
+  - index_middle
+  - index_near
+  - litte_far
+  - litte_near
+  - middle_far
+  - middle_near
+  - middle_ring
+  - pitch
+  - ring_far
+  - ring_little
+  - ring_near
+  - roll
+  - thumb_far
+  - thumb_index
+  - thumb_near
+  - thumb_palm
+  - wrist_bend
+bci_application:
+  applications:
+  - neuroprosthesis
+  - robotic_arm
+  environment: laboratory
+cross_validation:
+  cv_folds: 10
+  cv_method: 10x10-fold cross-validation
+  evaluation_type:
+  - within-session
+data_structure:
+  n_trials: 420
+  n_trials_per_class:
+    elbow_extension: 60
+    elbow_flexion: 60
+    forearm_pronation: 60
+    forearm_supination: 60
+    hand_close: 60
+    hand_open: 60
+    rest: 60
+  trials_context: per_session
+documentation:
+  acknowledgements: Data are available from the BNCI Horizon 2020 database at http://bnci-horizon-2020.eu/database/data-sets
+    (accession number 001-2017) and from Zenodo at DOI 10.5281/zenodo.834976
+  associated_paper_doi: 10.1371/journal.pone.0182578
+  contact_info:
+  - gernot.mueller@tugraz.at
+  country: AT
+  data_url: https://bnci-horizon-2020.eu/database/data-sets
+  doi: 10.1371/journal.pone.0182578
+  ethics_approval:
+  - Medical University of Graz, approval number 28-108 ex 15/16
+  funding:
+  - H2020-643955 MoreGrasp
+  - ERC Consolidator Grant ERC-681231 Feel Your Reach
+  institution: Graz University of Technology
+  institution_department: Institute of Neural Engineering, BCI-Lab
+  investigators:
+  - Patrick Ofner
+  - Andreas Schwarz
+  - Joana Pereira
+  - Gernot R. Müller-Putz
+  keywords:
+  - upper limb movements
+  - EEG
+  - motor imagery
+  - movement execution
+  - low-frequency
+  - time-domain
+  - BCI
+  - neuroprosthesis
+  license: CC-BY-4.0
+  publication_year: 2017
+  repository: BNCI Horizon 2020
+  senior_author: Gernot R. Müller-Putz
+experiment:
+  class_labels:
+  - right_elbow_flexion
+  - right_elbow_extension
+  - right_supination
+  - right_pronation
+  - right_hand_close
+  - right_hand_open
+  - rest
+  events:
+    rest: 1542
+    right_elbow_extension: 1537
+    right_elbow_flexion: 1536
+    right_hand_close: 1540
+    right_hand_open: 1541
+    right_pronation: 1539
+    right_supination: 1538
+  feedback_type: none
+  instructions: Subjects were instructed to execute sustained movements in ME session and perform kinesthetic motor imagery
+    in MI session. For rest class, subjects were instructed to avoid any movement and to stay in the starting position.
+  mode: offline
+  n_classes: 7
+  paradigm: imagery
+  stimulus_type: visual cue
+  study_design: 'Trial-based paradigm with sustained movements/motor imagery. Each trial: fixation cross at 0s, cue presentation
+    at 2s, sustained movement/MI execution. Subjects performed both movement execution (ME) and motor imagery (MI) in separate
+    sessions.'
+  synchronicity: synchronous
+file_format: gdf
+methodology: Subjects performed 6 sustained upper limb movements (elbow flexion/extension, forearm supination/pronation, hand
+  open/close) plus rest in two separate sessions (movement execution and motor imagery). EEG was recorded from 61 channels,
+  filtered to 0.3-3 Hz, and classified using shrinkage LDA with discriminative spatial patterns. Source localization was performed
+  using sLORETA. Classification employed both single time-point and time-window approaches with 10x10-fold cross-validation.
+paradigm_specific:
+  detected_paradigm: motor_imagery
+  imagery_tasks:
+  - elbow_flexion
+  - elbow_extension
+  - forearm_supination
+  - forearm_pronation
+  - hand_open
+  - hand_close
+participants:
+  age_max: 40.0
+  age_mean: 27.0
+  age_min: 22.0
+  age_std: 5.0
+  gender:
+    female: 9
+    male: 6
+  handedness:
+    left: 1
+    right: 14
+  health_status: healthy
+  n_subjects: 15
+  species: human
+performance:
+  mov_vs_mov_ME: 55.0
+  mov_vs_mov_MI: 27.0
+  mov_vs_rest_ME: 87.0
+  mov_vs_rest_MI: 73.0
+runs_per_session: 10
+sessions:
+- movement_execution
+- motor_imagery
+sessions_per_subject: 2
+signal_processing:
+  classifiers:
+  - sLDA
+  feature_extraction:
+  - time-domain signals
+  - discriminative spatial patterns (DSP)
+  frequency_bands:
+    analyzed_range:
+    - 0.3
+    - 3.0
+  spatial_filters:
+  - sLORETA source localization
+tags:
+  modality:
+  - Motor
+  pathology:
+  - Healthy
+  type:
+  - Motor Imagery
+  - Motor Execution
