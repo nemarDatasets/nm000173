@@ -1,50 +1,51 @@
 {
-	"Name": "Motor Imagery ataset from Ofner et al 2017",
-	"BIDSVersion": "1.9.0",
-	"HEDVersion": "8.4.0",
-	"DatasetType": "derivative",
-	"License": "CC-BY-4.0",
-	"Authors": [
-		"Patrick Ofner",
-		"Andreas Schwarz",
-		"Joana Pereira",
-		"Gernot R. M\u00fcller-Putz"
-	],
-	"Acknowledgements": "Data are available from the BNCI Horizon 2020 database at http://bnci-horizon-2020.eu/database/data-sets (accession number 001-2017) and from Zenodo at DOI 10.5281/zenodo.834976",
-	"Funding": [
-		"H2020-643955 MoreGrasp",
-		"ERC Consolidator Grant ERC-681231 Feel Your Reach"
-	],
-	"EthicsApprovals": [
-		"Medical University of Graz, approval number 28-108 ex 15/16"
-	],
-	"ReferencesAndLinks": [
-		"https://bnci-horizon-2020.eu/database/data-sets",
-		"10.1371/journal.pone.0182578"
-	],
-	"GeneratedBy": [
-		{
-			"CodeURL": "https://github.com/NeuroTechX/moabb",
-			"Name": "moabb",
-			"Description": "Mother of All BCI Benchmarks",
-			"Version": "1.5.0"
-		}
-	],
-	"SourceDatasets": [
-		{
-			"DOI": "10.1371/journal.pone.0182578",
-			"URL": "https://bnci-horizon-2020.eu/database/data-sets"
-		}
-	],
-	"Keywords": [
-		"upper limb movements",
-		"EEG",
-		"motor imagery",
-		"movement execution",
-		"low-frequency",
-		"time-domain",
-		"BCI",
-		"neuroprosthesis"
-	],
-	"PublicationYear": 2017
+  "Name": "Motor Imagery ataset from Ofner et al 2017",
+  "BIDSVersion": "1.9.0",
+  "Version": "1.0.1",
+  "HEDVersion": "8.4.0",
+  "DatasetType": "derivative",
+  "License": "CC-BY-4.0",
+  "Authors": [
+    "Patrick Ofner",
+    "Andreas Schwarz",
+    "Joana Pereira",
+    "Gernot R. Müller-Putz"
+  ],
+  "Acknowledgements": "Data are available from the BNCI Horizon 2020 database at http://bnci-horizon-2020.eu/database/data-sets (accession number 001-2017) and from Zenodo at DOI 10.5281/zenodo.834976",
+  "Funding": [
+    "H2020-643955 MoreGrasp",
+    "ERC Consolidator Grant ERC-681231 Feel Your Reach"
+  ],
+  "EthicsApprovals": [
+    "Medical University of Graz, approval number 28-108 ex 15/16"
+  ],
+  "ReferencesAndLinks": [
+    "https://bnci-horizon-2020.eu/database/data-sets",
+    "10.1371/journal.pone.0182578"
+  ],
+  "GeneratedBy": [
+    {
+      "CodeURL": "https://github.com/NeuroTechX/moabb",
+      "Name": "moabb",
+      "Description": "Mother of All BCI Benchmarks",
+      "Version": "1.5.0"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "10.1371/journal.pone.0182578",
+      "URL": "https://bnci-horizon-2020.eu/database/data-sets"
+    }
+  ],
+  "Keywords": [
+    "upper limb movements",
+    "EEG",
+    "motor imagery",
+    "movement execution",
+    "low-frequency",
+    "time-domain",
+    "BCI",
+    "neuroprosthesis"
+  ],
+  "PublicationYear": 2017
 }
