@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000173-blue)](https://doi.org/10.82901/nemar.nm000173)
+
 # Motor Imagery ataset from Ofner et al 2017
 
 Motor Imagery ataset from Ofner et al 2017.
