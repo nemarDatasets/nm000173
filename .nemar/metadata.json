@@ -1,6 +1,11 @@
 {
   "version": "2.0",
   "pipeline_stage": "enriched",
+  "title": "Motor Imagery ataset from Ofner et al 2017",
+  "description": "This dataset comprises EEG recordings from 15 healthy subjects performing and imagining six different upper limb movements (elbow flexion/extension, forearm supination/pronation, hand open/close) plus rest conditions. Data were collected during both movement execution and motor imagery sessions using 61-channel EEG with low-frequency filtering (0.3-3 Hz). The dataset is designed for brain-computer interface research and neuroprosthetic control applications, with classification accuracies of 55-87% for executed movements and 27-73% for imagined movements.",
+  "methods_description": "EEG was recorded from 61 channels (g.tec medical engineering hardware) at 512 Hz sampling rate with 0.01-200 Hz bandpass filtering (8th order Chebyshev) and 50 Hz notch filter. Reference electrode at right mastoid, ground at AFz. Subjects performed sustained upper limb movements in one session and kinesthetic motor imagery in another session. Each trial consisted of a fixation cross (0s), visual cue (2s), and sustained movement/imagery execution. Classification used shrinkage LDA with discriminative spatial patterns and source localization (sLORETA).",
+  "license": "CC-BY-4.0",
+  "dataset_type": "derivative",
   "authors": {
     "Patrick Ofner": {
       "orcid": "0000-0001-7169-4300"
@@ -9,6 +14,41 @@
     "Joana Pereira": {},
     "Gernot R. Müller-Putz": {}
   },
+  "keywords": [
+    {
+      "term": "EEG"
+    },
+    {
+      "term": "motor imagery"
+    },
+    {
+      "term": "movement execution"
+    },
+    {
+      "term": "brain-computer interfaces"
+    },
+    {
+      "term": "upper limb movements"
+    },
+    {
+      "term": "motor cortex"
+    },
+    {
+      "term": "neuroprosthetics"
+    },
+    {
+      "term": "neuroprosthesis"
+    },
+    {
+      "term": "low-frequency"
+    },
+    {
+      "term": "time-domain"
+    },
+    {
+      "term": "BCI"
+    }
+  ],
   "related_identifiers": [
     {
       "identifier": "10.1371/journal.pone.0182578",
@@ -21,14 +61,14 @@
       "relation_type": "IsDescribedBy"
     },
     {
-      "identifier": "https://nemar.org/dataexplorer/detail?dataset_id=nm000173",
-      "identifier_type": "URL",
-      "relation_type": "IsDescribedBy"
-    },
-    {
       "identifier": "10.5281/zenodo.834976",
       "identifier_type": "DOI",
       "relation_type": "IsVersionOf"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000173",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
     }
   ],
   "funding_references": [
@@ -43,19 +83,17 @@
       "award_title": "Feel Your Reach"
     }
   ],
-  "title": "Motor Imagery ataset from Ofner et al 2017",
-  "license": "CC-BY-4.0",
-  "dataset_type": "derivative",
   "resource_type_general": "Dataset",
+  "resource_type_specific": "EEG Dataset",
   "modalities": [
     "eeg"
   ],
-  "resource_type_specific": "EEG Dataset",
   "sizes": [
-    "9.2 GB (303 files)"
+    "36.5 GB (603 files)"
   ],
   "formats": [
     ".bdf",
+    ".gdf",
     ".html",
     ".json",
     ".md",
@@ -63,45 +101,5 @@
     ".yaml",
     ".yml"
   ],
-  "description": "This dataset comprises EEG recordings from 15 healthy subjects performing and imagining six different upper limb movements (elbow flexion/extension, forearm supination/pronation, hand open/close) plus rest conditions. Data were collected during both movement execution and motor imagery sessions using 61-channel EEG with low-frequency filtering (0.3-3 Hz). The dataset is designed for brain-computer interface applications, particularly for neuroprosthesis control, and includes classification results demonstrating significant discrimination between movement types and rest states.",
-  "methods_description": "EEG was recorded from 61 channels at 512 Hz sampling rate using g.tec medical engineering hardware with active sensors. Data were filtered with an 8th order Chebyshev bandpass filter (0.01-200 Hz) and 50 Hz notch filter. Reference electrode was placed at the right mastoid with ground at AFz. Subjects performed sustained upper limb movements in a movement execution session and kinesthetic motor imagery in a separate session, with visual cue presentation at 2 seconds and 3-second trial duration. Classification was performed using shrinkage LDA with discriminative spatial patterns and source localization via sLORETA.",
-  "keywords": [
-    {
-      "term": "EEG"
-    },
-    {
-      "term": "motor imagery"
-    },
-    {
-      "term": "motor execution"
-    },
-    {
-      "term": "brain-computer interfaces"
-    },
-    {
-      "term": "upper limb movements"
-    },
-    {
-      "term": "neuroprosthesis"
-    },
-    {
-      "term": "movement decoding"
-    },
-    {
-      "term": "low-frequency"
-    },
-    {
-      "term": "time-domain"
-    },
-    {
-      "term": "classification"
-    },
-    {
-      "term": "source localization"
-    },
-    {
-      "term": "sLORETA"
-    }
-  ],
-  "source_hash": "8c3d3d9eeab6bd988173e177ec4a5888d08a26dfd67610c1909be191f6652bf4"
+  "source_hash": "8d17a6f64135913eba411eb546e50b28c2438e43dd955d577003da4be06181b5"
 }
