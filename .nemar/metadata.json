@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Motor Imagery ataset from Ofner et al 2017",
-  "description": "This dataset comprises EEG recordings from 15 healthy subjects performing and imagining six different upper limb movements (elbow flexion/extension, forearm supination/pronation, hand open/close) plus rest conditions. Data were collected during both movement execution and motor imagery sessions using 61-channel EEG with low-frequency filtering (0.3-3 Hz). The dataset is designed for brain-computer interface research and neuroprosthetic control applications, with classification accuracies of 55-87% for executed movements and 27-73% for imagined movements.",
-  "methods_description": "EEG was recorded from 61 channels (g.tec medical engineering hardware) at 512 Hz sampling rate with 0.01-200 Hz bandpass filtering (8th order Chebyshev) and 50 Hz notch filter. Reference electrode at right mastoid, ground at AFz. Subjects performed sustained upper limb movements in one session and kinesthetic motor imagery in another session. Each trial consisted of a fixation cross (0s), visual cue (2s), and sustained movement/imagery execution. Classification used shrinkage LDA with discriminative spatial patterns and source localization (sLORETA).",
+  "description": "This dataset comprises EEG recordings from 15 healthy subjects performing and imagining six different upper limb movements (elbow flexion/extension, forearm supination/pronation, hand open/close) plus rest conditions. Data were collected during both movement execution and motor imagery sessions using 61-channel EEG with preprocessing filters at 0.01-200 Hz (8th order Chebyshev bandpass and 50 Hz notch), with analysis focused on the 0.3-3 Hz frequency band. The dataset is designed for brain-computer interface applications, particularly for non-invasive control of motor neuroprostheses or robotic arms, with classification accuracies reaching 87% for movement versus rest discrimination in executed movements.",
+  "methods_description": "EEG was recorded from 61 channels at 512 Hz sampling rate using g.tec medical engineering hardware with active sensors. Signals were preprocessed with an 8th order Chebyshev bandpass filter (0.01-200 Hz) and 50 Hz notch filter. Reference electrode was placed at the right mastoid with ground at AFz. Subjects performed sustained upper limb movements in a movement execution session and kinesthetic motor imagery in a separate session, with visual cue presentation at 2 seconds and 3-second trial duration. Classification employed shrinkage LDA with discriminative spatial patterns analyzed in the 0.3-3 Hz frequency band and source localization using sLORETA.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,31 +22,28 @@
       "term": "motor imagery"
     },
     {
-      "term": "movement execution"
+      "term": "motor execution"
     },
     {
-      "term": "brain-computer interfaces"
+      "term": "movement execution"
     },
     {
       "term": "upper limb movements"
     },
     {
-      "term": "motor cortex"
-    },
-    {
-      "term": "neuroprosthetics"
+      "term": "BCI"
     },
     {
       "term": "neuroprosthesis"
+    },
+    {
+      "term": "motor cortex"
     },
     {
       "term": "low-frequency"
     },
     {
       "term": "time-domain"
-    },
-    {
-      "term": "BCI"
     }
   ],
   "related_identifiers": [
@@ -101,5 +98,5 @@
     ".yaml",
     ".yml"
   ],
-  "source_hash": "8d17a6f64135913eba411eb546e50b28c2438e43dd955d577003da4be06181b5"
+  "source_hash": "3e1ea7f08daf56ee1c73f30eea70f4113bea1a1cc71ef4dcb878e0a7a8dd0ae4"
 }
