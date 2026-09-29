@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "enriched",
   "title": "Motor Imagery ataset from Ofner et al 2017",
-  "description": "This dataset comprises EEG recordings from 15 healthy subjects performing and imagining six different upper limb movements (elbow flexion/extension, forearm supination/pronation, hand open/close) plus rest conditions. Data were collected during both movement execution and motor imagery sessions using 61-channel EEG with preprocessing filters at 0.01-200 Hz (8th order Chebyshev bandpass and 50 Hz notch), with analysis focused on the 0.3-3 Hz frequency band. The dataset is designed for brain-computer interface applications, particularly for non-invasive control of motor neuroprostheses or robotic arms, with classification accuracies reaching 87% for movement versus rest discrimination in executed movements.",
-  "methods_description": "EEG was recorded from 61 channels at 512 Hz sampling rate using g.tec medical engineering hardware with active sensors. Signals were preprocessed with an 8th order Chebyshev bandpass filter (0.01-200 Hz) and 50 Hz notch filter. Reference electrode was placed at the right mastoid with ground at AFz. Subjects performed sustained upper limb movements in a movement execution session and kinesthetic motor imagery in a separate session, with visual cue presentation at 2 seconds and 3-second trial duration. Classification employed shrinkage LDA with discriminative spatial patterns analyzed in the 0.3-3 Hz frequency band and source localization using sLORETA.",
+  "description": "EEG recordings from fifteen healthy participants who executed and imagined six sustained upper limb movements (elbow flexion/extension, forearm supination/pronation, hand open/close) plus a rest condition, in two separate sessions. The dataset supports decoding of single upper limb movements from the time-domain of low-frequency EEG. It is relevant to non-invasive control of motor neuroprostheses and robotic arms. This BIDS version was generated from the original BNCI Horizon 2020 data using MOABB.",
+  "methods_description": "61-channel EEG (plus EOG) was recorded at 512 Hz with g.tec active electrodes, referenced to the right mastoid with ground at AFz. Online filtering was 0.01-200 Hz bandpass with a 50 Hz notch. Participants completed 10 runs per session of cued trials in movement execution and motor imagery sessions. The original study filtered to 0.3-3 Hz and classified with shrinkage LDA using discriminative spatial patterns.",
   "license": "CC-BY-4.0",
   "dataset_type": "derivative",
   "authors": {
@@ -22,28 +22,19 @@
       "term": "motor imagery"
     },
     {
-      "term": "motor execution"
-    },
-    {
       "term": "movement execution"
     },
     {
       "term": "upper limb movements"
     },
     {
-      "term": "BCI"
+      "term": "brain-computer interface"
     },
     {
       "term": "neuroprosthesis"
     },
     {
-      "term": "motor cortex"
-    },
-    {
-      "term": "low-frequency"
-    },
-    {
-      "term": "time-domain"
+      "term": "low-frequency EEG"
     }
   ],
   "related_identifiers": [
@@ -66,17 +57,22 @@
       "identifier": "https://nemar.org/dataset/nm000173",
       "identifier_type": "URL",
       "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1038/s41597-019-0104-8",
+      "identifier_type": "DOI",
+      "relation_type": "References"
     }
   ],
   "funding_references": [
     {
-      "funder_name": "European Commission",
-      "award_number": "H2020-643955",
+      "funder_name": "European Commission (H2020)",
+      "award_number": "643955",
       "award_title": "MoreGrasp"
     },
     {
       "funder_name": "European Research Council",
-      "award_number": "ERC-681231",
+      "award_number": "681231",
       "award_title": "Feel Your Reach"
     }
   ],
@@ -86,7 +82,7 @@
     "eeg"
   ],
   "sizes": [
-    "36.5 GB (603 files)"
+    "34.00 GB (603 files)"
   ],
   "formats": [
     ".bdf",
